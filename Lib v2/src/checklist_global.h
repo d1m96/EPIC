@@ -1,0 +1,12 @@
+#ifndef CHECKLIST_GLOBAL_H
+#define CHECKLIST_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CHECKLIST_LIBRARY)
+#  define CHECKLISTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CHECKLISTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CHECKLIST_GLOBAL_H

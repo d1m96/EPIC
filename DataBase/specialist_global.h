@@ -1,0 +1,12 @@
+#ifndef SPECIALIST_GLOBAL_H
+#define SPECIALIST_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(SPECIALIST_LIBRARY)
+#  define SPECIALISTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define SPECIALISTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // SPECIALIST_GLOBAL_H

@@ -1,0 +1,12 @@
+#ifndef MEDIADATA_GLOBAL_H
+#define MEDIADATA_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MEDIADATA_LIBRARY)
+#  define MEDIADATASHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MEDIADATASHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MEDIADATA_GLOBAL_H
